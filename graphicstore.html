@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charse="UTF-8">
+        <title> Main </title>
+        <style>
+            h1 {
+                text-align: center;
+            }
+
+            #txt_welcome {
+                text-align: center; 
+                margin-bottom: 50px;
+            }
+
+            .card {
+                text-align: center;
+            }
+
+            .intro {
+                text-align: center;
+            }
+
+            .card_title {
+                font-size: 20px;
+            }
+
+            .card_button {
+                font-size: 16px;
+                width: 150px;
+                height: 30px;
+                background-color:#f1d682;
+                color: #608d00;
+                border: none;
+                border-radius:50px;
+            }
+
+            .card_button:hover {
+                background-color:#e6400e;
+                color: #ffffff;
+                transition: 0.6s;
+            }
+
+            .card_img {
+                width: 400px;
+                height: 280px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>
+            <br> <br>
+            그래픽 상점</h1>
+        <div class = "intro">
+            <br> <br>
+            마음에 드는 그래픽을 구매하세요<br>
+            장바구니에 담을 수 있습니다
+            <br> <br>
+            <br> <br>
+        </div>
+        <div style="display:grid; grid-template-columns: 1fr 1fr 1fr;">
+            <div class="card">
+                <img class="card_img" src="./img/graphic1.jpg">
+                <br> <br>
+                <p class="card_title"> [그래픽 1] 5만원 </p>
+                <input class="card_button" type="button" value="장바구니에 담기" onclick="alert('장바구니에 담겼습니다')">
+            </div>
+            <div class="card">
+                <img class="card_img" src="./img/graphic2.jpg">
+                <br> <br>
+                <p class="card_title"> [그래픽 2] 7만원 </p>
+                <input class="card_button" type="button" value="장바구니에 담기" onclick="alert('장바구니에 담겼습니다')">
+            </div>
+            <div class="card">
+                <img class="card_img" src="./img/graphic3.jpg">
+                <br> <br>
+                <p class="card_title"> [그래픽 3] 9만원 </p>
+                <input class="card_button" type="button" value="장바구니에 담기" onclick="alert('장바구니에 담겼습니다')">
+            </div>
+        </div>
+    </body>
+</html>
